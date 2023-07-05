@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  background-color: rgb(235, 245, 251);
+  color: rgb(216, 216, 216);
+}
+
+.margin {
+  margin-top: 100px;
+}
+.blue-container {
+  background-color: rgb(133, 146, 158);
+  padding: 20px;
+  color: rgb(33, 47, 60);
+  border: 3px solid rgb(33, 47, 60);
+}
+
+.description {
+  margin-top: -30px;
+}
+.btn-custom {
+  background-color: rgb(33, 47, 60);
+  font-weight: bold;
+}
+
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom:hover {
+  background-color: rgb(33, 47, 60);
+  font-weight: bold;
+  color: rgb(133, 146, 158);
+}
+.weather-icon {
+  width: 25px;
+  height: 25px;
+}
+
+h1 {
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: rgb(33, 47, 60);
+  font-weight: bold;
+}
+
+input::placeholder {
+  text-align: center;
+}
