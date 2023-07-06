@@ -3,7 +3,7 @@
     <div class="col-md-6">
       <div class="blue-container rounded-2 text-center">
         <h1 class="text-center mb-4">Weather App</h1>
-        <div class="text-center" *ngIf="search">
+        <div class="text-center dataContainer mb-4 rounded-2" *ngIf="search">
           <div class="d-flex align-items-center justify-content-center mb-4">
             <img
               [src]="getWeatherIconUrl()"
@@ -16,14 +16,15 @@
             {{ weatherDescription }}
           </h5>
           <div
-            class="d-flex align-items-center justify-content-center mb-4"
+            class="d-flex align-items-center justify-content-center mb-3"
             *ngIf="showData"
           >
             <img
               src="https://cdn-icons-png.flaticon.com/128/481/481476.png"
-              class="weather-icon mx-2"
+              class="weather-icon"
+              style="margin-right: 8px"
             />
-            <p>{{ wind }} km/h</p>
+            <p class="mb-0">{{ wind }} km/h</p>
           </div>
           <div
             class="d-flex align-items-center justify-content-center mb-5"
@@ -32,8 +33,9 @@
             <img
               src="https://cdn-icons-png.flaticon.com/128/3920/3920689.png"
               class="weather-icon"
+              style="margin-right: 8px"
             />
-            <p>{{ humidity }}%</p>
+            <p class="mb-0 ml-3">{{ humidity }}%</p>
             <br />
           </div>
         </div>

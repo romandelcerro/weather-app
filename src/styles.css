@@ -1,31 +1,33 @@
-html,
+html {
+  background-image: url("https://cdn.discordapp.com/attachments/696380505607634954/1126454323921027092/Group.png");
+}
 body {
-  background-color: rgb(235, 245, 251);
-  color: rgb(216, 216, 216);
+  background-color: rgba(240, 248, 255, 0);
 }
 
 .margin {
   margin-top: 100px;
 }
 .blue-container {
-  background-color: rgb(133, 146, 158);
+  background-color: rgb(255, 255, 255);
   padding: 20px;
-  color: rgb(33, 47, 60);
-  border: 3px solid rgb(33, 47, 60);
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .description {
   margin-top: -30px;
 }
 .btn-custom {
-  background-color: rgb(33, 47, 60);
+  background-color: rgb(0, 0, 0);
   font-weight: bold;
+  border: solid 2px black;
 }
 
 .btn-custom:focus,
 .btn-custom:active,
 .btn-custom:hover {
-  background-color: rgb(33, 47, 60);
+  background-color: rgb(0, 0, 0);
   font-weight: bold;
   color: rgb(133, 146, 158);
 }
@@ -35,11 +37,18 @@ body {
 }
 
 h1 {
-  -webkit-text-stroke: 1px white;
-  -webkit-text-fill-color: rgb(33, 47, 60);
   font-weight: bold;
 }
 
 input::placeholder {
   text-align: center;
+  color: white;
+}
+
+.dataContainer {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.form-control {
+  border: solid 2px black;
 }
